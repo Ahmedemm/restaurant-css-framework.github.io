@@ -20,6 +20,11 @@
   </head>
 
   <body>
+    <div class="loader">
+      <span class="logo-anim">
+        <img src="photo/logo (1).png" alt="" srcset=""
+      /></span>
+    </div>
     <div class="corner-decoration top-left"></div>
     <nav
       class="navbar navbar-expand-lg navbar-light bg-transparent"
@@ -82,25 +87,31 @@
       style="margin-top: 20px; margin-left: 10%"
     >
       <div class="col-12 col-md-6">
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem; background-color: #180e04">
           <img class="card-img-top" src="photo/6.jpg" alt="Card image cap" />
           <div class="card-body">
-            <h5 class="card-title">evenement</h5>
+            <h5 class="card-title"><b>Evenement</b></h5>
             <p class="card-text">soirée flamenco tout les samedi</p>
             <a href="/Photos/Photo.html" class="btn btn-primary">Photos</a>
           </div>
         </div>
       </div>
       <div class="col-12 col-md-6">
-        <div class="card" style="width: 18rem">
+        <div class="card" style="width: 18rem; background-color: #180e04">
           <img class="card-img-top" src="/photo/10.webp" alt="Card image cap" />
           <div class="card-body">
-            <h5 class="card-title">Promo</h5>
+            <h5 class="card-title"><b>Promo </b></h5>
             <p class="card-text">Nos articles en promotion actuellement</p>
             <a href="/Menu/menu.html" class="btn btn-primary">Menu</a>
           </div>
         </div>
       </div>
+    </div>
+    <div class="cookie-bubble">
+      <img src="photo/Cookies-Logo-PNG.png" alt="Cookies" />
+      <p>Ce site utilise des cookies pour améliorer votre expérience.</p>
+      <button id="accept-button">Accepter</button>
+      <button id="reject-button">Refuser</button>
     </div>
     <div class="corner-decoration bottom-right"></div>
     <script
@@ -108,5 +119,40 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <script>
+      const acceptButton = document.getElementById("accept-button");
+      const rejectButton = document.getElementById("reject-button");
+      const cookieBubble = document.querySelector(".cookie-bubble");
+
+      function closeCookieBubble() {
+        cookieBubble.style.display = "none";
+      }
+
+      acceptButton.addEventListener("click", function () {
+        closeCookieBubble();
+      });
+
+      rejectButton.addEventListener("click", function () {
+        closeCookieBubble();
+      });
+
+      const loader = document.querySelector(".loader");
+      const logoAnim = document.querySelector(".logo-anim");
+
+      window.addEventListener("load", () => {
+        setTimeout(function () {
+          // Attendez 2 secondes, puis masquez la span
+          logoAnim.style.opacity = "0";
+          loader.style.opacity = "0";
+
+          // Attendez 1 seconde pour que la transition se termine
+          setTimeout(function () {
+            // Masquez le .loader et la span
+            logoAnim.style.display = "none";
+            loader.style.display = "none";
+          }, 1000); // 1000 millisecondes (1 seconde)
+        }, 4000); // 2000 millisecondes (2 secondes)
+      });
+    </script>
   </body>
 </html>

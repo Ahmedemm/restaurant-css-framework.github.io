@@ -1,8 +1,44 @@
 @import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
+
 body {
   background-color: #eb8b2b !important;
   --bs-body-bg: unset;
   fill: url(photo/Line\ Art-1.png);
+}
+@keyframes zoomInOut {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #eb8b2b;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  animation: zoomInOut 2s ease infinite;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.logo-anim img {
+  animation: zoomInOut 2s ease infinite;
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+  margin-left: 20%;
 }
 
 img {
@@ -38,8 +74,6 @@ img {
   background-color: #ff9933;
   border-color: #ff9933;
 }
-.card {
-}
 .img-fluid {
   text-align: center;
 }
@@ -59,4 +93,45 @@ img {
   bottom: 0;
   right: 0;
   rotate: 180deg;
+}
+.cookie-bubble {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+}
+
+.cookie-bubble img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.cookie-bubble p {
+  margin: 0;
+  flex: 1;
+}
+
+.cookie-bubble button {
+  background-color: #eb8b2b;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.cookie-bubble button:hover {
+  background-color: #ffad42;
+}
+.card-title,
+.card-text {
+  color: #eb8b2b !important;
 }
