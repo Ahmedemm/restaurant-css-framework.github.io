@@ -51,3 +51,6 @@ h3 {
 .nav-tabs .nav-item .nav-link {
   color: orange !important;
 }
+.fw-light {
+  color: #eb8b2b;
+}
