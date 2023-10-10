@@ -1,0 +1,33 @@
+body {
+  background-color: #180e04 !important;
+}
+.logo {
+  margin-left: 20px;
+  width: 50%;
+}
+.corner-decoration {
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  background-image: url("../photo/Line\ Art.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.top-left {
+  top: -1;
+  left: -1;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  rotate: 180deg;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: #eb8b2b !important;
+}
+ul,
+h1,
+h2,
+p {
+  color: #eb8b2b;
+}

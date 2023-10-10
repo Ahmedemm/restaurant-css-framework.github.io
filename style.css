@@ -1,17 +1,62 @@
+@import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
+body {
+  background-color: #eb8b2b !important;
+  --bs-body-bg: unset;
+  fill: url(photo/Line\ Art-1.png);
+}
+
 img {
-  width: 10%;
-}
-.masthead {
-  height: 50%;
-  min-height: 500px;
-  background-image: url("photo/a403320ac4c56b37ef525426e074c8c324c3d2045f8cc46b8ad133aa2211cf44.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-.custom-jumbotron {
   width: 50%;
 }
+
+.jumbotron {
+  margin-top: 30px;
+  height: 50%;
+  min-height: 400px;
+}
 .fw-light {
-  margin-top: 13%;
+  font-family: "Autour One", cursive;
+  font-size: 80px;
+  color: black;
+}
+.lead {
+  font-family: "Autour One", cursive;
+  color: black;
+}
+
+.logo {
+  margin-left: 20px;
+}
+.line1 {
+  z-index: 0;
+}
+.btn-primary {
+  background-color: #eb8b2b;
+  border-color: #eb8b2b;
+}
+.btn-primary:hover {
+  background-color: #ff9933;
+  border-color: #ff9933;
+}
+.card {
+}
+.img-fluid {
+  text-align: center;
+}
+.corner-decoration {
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  background-image: url("photo/Line\ Art.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.top-left {
+  top: -1;
+  left: -1;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  rotate: 180deg;
 }

@@ -1,0 +1,53 @@
+body {
+  background-color: #180e04 !important;
+  --bs-body-bg: unset;
+}
+.menu {
+  padding: 20px;
+}
+
+.nav-link.active {
+  color: white;
+}
+.ingredients {
+  color: #eb8b2b;
+}
+h4 {
+  color: #eb8b2b !important;
+}
+h3 {
+  color: #eb8b2b !important;
+}
+.price {
+  color: #eb8b2b;
+}
+.logo {
+  margin-left: 20px;
+  width: 50%;
+}
+.corner-decoration {
+  position: fixed;
+  width: 1000px;
+  height: 1000px;
+  background-image: url("../photo/Line\ Art.png");
+  background-repeat: no-repeat;
+  z-index: -1;
+}
+.top-left {
+  top: -1;
+  left: -1;
+}
+.bottom-right {
+  bottom: 0;
+  right: 0;
+  rotate: 180deg;
+}
+.navbar-light .navbar-nav .nav-link {
+  color: orange !important;
+}
+.navbar-light .navbar-nav .nav-link.active {
+  color: brown !important;
+}
+.nav-tabs .nav-item .nav-link {
+  color: orange !important;
+}
