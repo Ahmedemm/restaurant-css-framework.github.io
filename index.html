@@ -141,17 +141,14 @@
 
       window.addEventListener("load", () => {
         setTimeout(function () {
-          // Attendez 2 secondes, puis masquez la span
           logoAnim.style.opacity = "0";
           loader.style.opacity = "0";
 
-          // Attendez 1 seconde pour que la transition se termine
           setTimeout(function () {
-            // Masquez le .loader et la span
             logoAnim.style.display = "none";
             loader.style.display = "none";
-          }, 1000); // 1000 millisecondes (1 seconde)
-        }, 4000); // 2000 millisecondes (2 secondes)
+          }, 1000);
+        }, 4000);
       });
     </script>
   </body>
