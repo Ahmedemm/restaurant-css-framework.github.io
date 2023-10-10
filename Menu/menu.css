@@ -2,10 +2,18 @@ body {
   background-color: #180e04 !important;
   --bs-body-bg: unset;
 }
+@font-face {
+  font-family: "Mexicana-1";
+  src: url(../font/MexicanaHollow.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .menu {
   padding: 20px;
 }
-
+.nav-link:hover {
+  cursor: pointer;
+}
 .nav-link.active {
   color: white;
 }
@@ -17,6 +25,8 @@ h4 {
 }
 h3 {
   color: #eb8b2b !important;
+  font-family: "Mexicana-1", sans-serif;
+  font-size: 20px;
 }
 .price {
   color: #eb8b2b;

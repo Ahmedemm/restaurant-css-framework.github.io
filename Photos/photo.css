@@ -1,6 +1,12 @@
 body {
   background-color: #eb8b2b;
 }
+@font-face {
+  font-family: "Mexicana";
+  src: url(../font/Mexicana.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 .logo {
   width: 50%;
   margin-left: 20px;
@@ -24,4 +30,7 @@ body {
 }
 .page-link {
   background-color: #eb8b2b;
+}
+h1 {
+  font-family: "Mexicana";
 }

@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Autour+One&display=swap");
+@font-face {
+  font-family: "Mexicana";
+  src: url(font/Mexicana.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 
 body {
   background-color: #eb8b2b !important;
@@ -51,12 +57,12 @@ img {
   min-height: 400px;
 }
 .fw-light {
-  font-family: "Autour One", cursive;
-  font-size: 80px;
+  font-family: "Mexicana", sans-serif;
+  font-size: 120px;
   color: black;
 }
 .lead {
-  font-family: "Autour One", cursive;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: black;
 }
 
